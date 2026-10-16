@@ -40,13 +40,23 @@ def link(store, entry, tags):
 
 def render():
     data, tags = load("parts.toml"), load("affiliate.toml")
-    seeed_tags = {k: v.strip() for k, v in tags.get("seeed", {}).items() if v.strip()}
+    seeed = tags.get("seeed", {})
+    seeed_code = seeed.get("code", "").strip()
+    seeed_tags = {k: v.strip() for k, v in seeed.items() if k not in ("code", "template") and v.strip()}
+
+    def seeed_link(part):
+        if part["id"] in seeed_tags:
+            return seeed_tags[part["id"]]
+        if seeed_code:
+            return seeed.get("template", "{url}").format(url=part["seeed"]["url"], code=seeed_code)
+        return part["seeed"]["url"]
+
     out = []
     used = [s for s, _ in STORES if tags.get(s, "").strip()]
-    if used or seeed_tags:
+    if used or seeed_tags or seeed_code:
         text = " ".join(DISCLOSURE[s] for s in used)
-        if seeed_tags:
-            text += " Links to Seeed Studio are affiliate links as well."
+        if seeed_tags or seeed_code:
+            text += " Links to Seeed Studio are affiliate links" + (" as well." if used else ".")
         out.append("> **Affiliate links.** " + text.strip() + " The price is the same for you.")
         out.append("")
     out.append("| Part | Qty | " + " | ".join(n for _, n in STORES) + " |")
@@ -65,7 +75,7 @@ def render():
             cell += "<br><sub>" + " · ".join(extra) + "</sub>"
         cols = []
         if "seeed" in p:
-            url = seeed_tags.get(p["id"], p["seeed"]["url"])
+            url = seeed_link(p)
             label = p["seeed"].get("label", "Seeed Studio")
             out.append(f"| {cell} | {p['qty']} | " + " | ".join([f"[{label}]({url})"] * len(STORES)) + " |")
             continue
