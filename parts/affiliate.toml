@@ -3,7 +3,7 @@
 # has to be listed as a website in each account.
 # After editing:  python3 parts/render.py
 
-com = ""   # amazon.com, e.g. "yourid-20"
+com = "amazonpart0bf-20"   # amazon.com, e.g. "yourid-20"
 de = "amazonpar049d-21"    # amazon.de,  e.g. "yourid-21"
 fr = ""    # amazon.fr,  e.g. "yourid-21"
 
