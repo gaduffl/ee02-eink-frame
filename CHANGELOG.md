@@ -2,7 +2,7 @@
 
 ## Docs — 2026-10-16
 
-- Parts list with Amazon links for the US, Germany and France, generated from `parts/parts.toml`.
+- Parts list with Amazon links for the US, Germany and France.
 - Back board: notch drawing and steps. The frame's back board goes back in around the case and holds the passepartout and display; the battery lid slides out over it.
 - LiPo charger added to the parts list, for charging the spare battery outside the frame.
 - Electronics: the Seeed XIAO ePaper DIY Kit EE02 (board + the tested 13.3″ Spectra 6 panel).

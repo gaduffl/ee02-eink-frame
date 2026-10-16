@@ -19,7 +19,6 @@ A battery-powered 13.3″ colour e-paper picture frame built into an off-the-she
 
 The electronics come as one kit from Seeed Studio: the EE02 board with the 13.3″ Spectra 6 panel it was made for. That's the tested combination. Everything else is on Amazon, with links for amazon.com, amazon.de and amazon.fr.
 
-<!-- PARTS:START -->
 > **Affiliate links.** As an Amazon Associate I earn from qualifying purchases. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises. Links to Seeed Studio are affiliate links as well. The price is the same for you.
 
 | Part | Qty | amazon.com | amazon.de | amazon.fr |
@@ -35,7 +34,6 @@ The electronics come as one kit from Seeed Studio: the EE02 board with the 13.3�
 | **JST-PH 2.0 2-pin extension cable (optional)**<br><sub>Only if your battery's leads are shorter than 50 mm</sub> | 1 | [search](https://www.amazon.com/s?k=JST+PH+2.0+2+pin+extension+cable+male+female&tag=amazonpart0bf-20) | [search](https://www.amazon.de/s?k=JST+PH+2.0+2+Pin+Verl%C3%A4ngerungskabel&tag=amazonpar049d-21) | [search](https://www.amazon.fr/s?k=rallonge+JST+PH+2.0+2+broches&tag=amazonpar0184-21) |
 
 <sub>Search links open an Amazon search for the part; pick any listing that meets the requirement under the part name.<br>\* Suggested listing, not yet checked against the requirements. Check the size and connector before you buy.</sub>
-<!-- PARTS:END -->
 
 You also need a wall screw for each hanging position, with a head up to 8.4 mm and a shank up to 4.2 mm.
 
@@ -117,13 +115,9 @@ LiPo cells don't like punctures, crushing or heat. The pocket leaves room around
 © 2026 gaduffl
 
 - The design (STL, STEP, 3MF), documentation and images are licensed under [CC BY-SA 4.0](LICENSE).
-- The Python sources in [`cad/`](cad) and [`parts/`](parts) are licensed under the [MIT licence](LICENSE-MIT).
+- The Python sources in [`cad/`](cad) are licensed under the [MIT licence](LICENSE-MIT).
 
 Board and panel dimensions come from Seeed's published EE02 design files and the T133A01 datasheet. No Seeed files are included.
-
-## About the parts links
-
-The parts list is generated from [`parts/parts.toml`](parts/parts.toml) by `python3 parts/render.py`. Listings marked with \* haven't been checked yet; corrections and better listings are welcome.
 
 ## Status and contributing
 
