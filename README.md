@@ -17,8 +17,6 @@ A battery-powered 13.3″ colour e-paper picture frame built into an off-the-she
 
 ## Parts
 
-> **Affiliate links.** As an Amazon Associate I earn from qualifying purchases. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises. Links to Seeed Studio are affiliate links as well. The price is the same for you.
-
 ### Electronics
 
 The EE02 board and the 13.3″ Spectra 6 panel (T133A01, 1200 × 1600) it was made for. That's the tested combination; it isn't sold on Amazon. Buy either the kit or both single items:
@@ -28,9 +26,13 @@ The EE02 board and the 13.3″ Spectra 6 panel (T133A01, 1200 × 1600) it was ma
 | Seeed Studio, ships worldwide | [XIAO ePaper DIY Kit EE02](https://www.seeedstudio.com/XIAO-ePaper-DIY-Kit-EE02-for-13-3-Spectratm-6-E-Ink.html?sensecap_affiliate=51k9ycE&referring_service=link): **one kit** with board and panel. Select both on the page. |
 | OpenELAB, EU | **Two items:** the [EE02 board](https://openelab.de/products/seeed-studio-xiao-epaper-board?variant=53040086614353) and the [13.3″ Spectra 6 panel](https://openelab.de/products/seeed-studio-13-3-zoll-epaper?variant=53022818992465) |
 
+<sub>The Seeed Studio link is an affiliate link; the price is the same for you.</sub>
+
 ### Everything else
 
 Links for amazon.com, amazon.de and amazon.fr.
+
+> **Affiliate links.** As an Amazon Associate I earn from qualifying purchases. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises. The price is the same for you.
 
 | Part | Qty | amazon.com | amazon.de | amazon.fr |
 |---|---|---|---|---|
