@@ -1,6 +1,7 @@
 # Parts list for the README. Edit here, then run:  python3 parts/render.py
 #
-# Per store, a part has one of:
+# A part sold only by Seeed has a [part.seeed] table (url, label); it is shown in every column.
+# Per Amazon store, a part has one of:
 #   asin = "B0..."      product link   https://www.amazon.<tld>/dp/<asin>
 #   search = "..."      search link    https://www.amazon.<tld>/s?k=<search>
 # plus an optional label (link text).
@@ -11,32 +12,15 @@
 checked = ""
 
 [[part]]
-id = "board"
-name = "Seeed XIAO ePaper Display Board EE02 (V1.0)"
+id = "kit"
+name = "Seeed XIAO ePaper DIY Kit EE02 for 13.3″ Spectra 6"
 qty = "1"
-needs = "Comes with the XIAO ESP32-S3 Plus and a U.FL antenna"
+needs = "On the page, pick both the EE02 board and the 13.3″ Spectra 6 panel (T133A01, 1200 × 1600)"
 tested = true
-other = [
-  { label = "Seeed EE02 board / DIY kit", url = "https://wiki.seeedstudio.com/getting_started_with_ee02/" },
-]
-note = "Not sold on Amazon at the time of writing. Seeed's DIY kit also contains the panel."
-
-[[part]]
-id = "panel"
-name = "13.3″ E Ink Spectra 6 panel, 1200 × 1600, raw (no driver board)"
-qty = "1"
-needs = "Outline 284.7 × 208.8 × 0.85 mm, active area 270.4 × 202.8 mm"
-tested = false
-note = "Tested panel: Seeed T133A01 from the EE02 kit. The Waveshare raw panel has the same outline and active area."
-[part.com]
-asin = "B0DPBTT286"
-label = "Waveshare 13.3″ Spectra 6 raw panel"
-[part.de]
-asin = "B0DPBTT286"
-label = "Waveshare 13.3″ Spectra 6 raw panel"
-[part.fr]
-asin = "B0DPBTT286"
-label = "Waveshare 13.3″ Spectra 6 raw panel"
+note = "The tested combination; the board drives this panel directly. Not sold on Amazon."
+[part.seeed]
+url = "https://www.seeedstudio.com/XIAO-ePaper-DIY-Kit-EE02-for-13-3-Spectratm-6-E-Ink.html"
+label = "Seeed Studio"
 
 [[part]]
 id = "battery"

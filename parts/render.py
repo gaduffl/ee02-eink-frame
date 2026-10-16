@@ -40,11 +40,14 @@ def link(store, entry, tags):
 
 def render():
     data, tags = load("parts.toml"), load("affiliate.toml")
+    seeed_tags = {k: v.strip() for k, v in tags.get("seeed", {}).items() if v.strip()}
     out = []
     used = [s for s, _ in STORES if tags.get(s, "").strip()]
-    if used:
-        out.append("> **Affiliate links.** " + " ".join(DISCLOSURE[s] for s in used)
-                   + " The price is the same for you.")
+    if used or seeed_tags:
+        text = " ".join(DISCLOSURE[s] for s in used)
+        if seeed_tags:
+            text += " Links to Seeed Studio are affiliate links as well."
+        out.append("> **Affiliate links.** " + text.strip() + " The price is the same for you.")
         out.append("")
     out.append("| Part | Qty | " + " | ".join(n for _, n in STORES) + " |")
     out.append("|---|---|" + "---|" * len(STORES))
@@ -61,6 +64,11 @@ def render():
         if extra:
             cell += "<br><sub>" + " · ".join(extra) + "</sub>"
         cols = []
+        if "seeed" in p:
+            url = seeed_tags.get(p["id"], p["seeed"]["url"])
+            label = p["seeed"].get("label", "Seeed Studio")
+            out.append(f"| {cell} | {p['qty']} | " + " | ".join([f"[{label}]({url})"] * len(STORES)) + " |")
+            continue
         for store, _ in STORES:
             entry = p.get(store)
             if not entry:
