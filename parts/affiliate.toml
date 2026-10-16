@@ -5,7 +5,7 @@
 
 com = "amazonpart0bf-20"   # amazon.com, e.g. "yourid-20"
 de = "amazonpar049d-21"    # amazon.de,  e.g. "yourid-21"
-fr = ""    # amazon.fr,  e.g. "yourid-21"
+fr = "amazonpar0184-21"    # amazon.fr,  e.g. "yourid-21"
 
 # Seeed Studio affiliate links (own programme, https://www.seeedstudio.com/blog/affiliate-program/).
 # `code` is the affiliate code from the Seeed dashboard; `template` builds the link from it.
