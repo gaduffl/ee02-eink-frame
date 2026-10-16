@@ -1,0 +1,6 @@
+# CAD build (build.py, ee02_frame_case.py)
+cadquery>=2.4
+trimesh>=4.0
+numpy
+# fit checks (check_fit.py)
+manifold3d

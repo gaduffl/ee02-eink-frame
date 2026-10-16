@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="260" viewBox="-185 -15 370 130" role="img" aria-labelledby="hgT hgD" class="dwg dwg-hanger"><style>
+.dwg text{font-family:Helvetica, Arial, sans-serif}
+.dwg .wood{fill:#C49A6C; stroke:#7A5634; stroke-width:.6}
+.dwg .pp{fill:#F3F2EC; stroke:#A3A6A2; stroke-width:.4}
+.dwg .panel{fill:#7C838B}
+.dwg .aa{fill:none; stroke:#FFFFFF; stroke-width:.6; stroke-dasharray:4 3; opacity:.8}
+.dwg .flex{fill:#D5842A}
+.dwg .foldmark{stroke:#7A4A10; stroke-width:1.8}
+.dwg .case{fill:#2F58C9; fill-opacity:.2; stroke:#2F58C9; stroke-width:1.2}
+.dwg .tape{fill:url(#hatch)}
+.dwg .hatch{stroke:#2F58C9; stroke-width:1}
+.dwg .pcb{fill:#1D2320; fill-opacity:.88}
+.dwg .batt{fill:#A5ACB6; stroke:#2B3136; stroke-width:.4}
+.dwg .ant{fill:#1E2023}
+.dwg .cable{stroke:#1E2023; stroke-width:1; fill:none}
+.dwg .window{fill:none; stroke:#C23A30; stroke-width:.9; stroke-dasharray:3 2}
+.dwg .slidepath{fill:#E8EDF1; fill-opacity:.35; stroke:#2F58C9; stroke-width:.9; stroke-dasharray:4 3}
+.dwg .slidearrow{stroke:#2F58C9; stroke-width:1.6; fill:none}
+.dwg .keyopen{fill:#C23A30}
+.dwg .leads{stroke:#C23A30; stroke-width:1.4; fill:none; stroke-linejoin:round}
+.dwg .hanger,.dwg .bumper,.dwg .hangerplate{fill:#2F58C9}
+.dwg .dim{stroke:#2B3136; stroke-width:.6; fill:none}
+.dwg .arrowhead{fill:#2B3136}
+.dwg .arrowhead.accent{fill:#C23A30}
+.dwg .dimt{font:500 9.5px Menlo, Consolas, "DejaVu Sans Mono", monospace; fill:#2B3136}
+.dwg .lbl{font-size:10.5px; fill:#14181B}
+.dwg .onpanel{fill:#FFFFFF}
+.dwg .small{font:500 8.5px Menlo, Consolas, "DejaVu Sans Mono", monospace}
+.dwg .leader{stroke:#6B757D; stroke-width:.5; fill:none}
+.dwg .cap{font:500 9px Menlo, Consolas, "DejaVu Sans Mono", monospace; letter-spacing:.14em; fill:#55606A}
+.dwg-depth .lbl{font-size:13.5px}
+.dwg-depth .dimt{font-size:12.5px}
+.dwg .glass{fill:#CFE2EA; stroke:#2B3136; stroke-width:.3; opacity:.9}
+.dwg .tapeband{fill:#E0AE10}
+.dwg .lidband{fill:#E8EDF1; stroke:#2F58C9; stroke-width:.8}
+.dwg .backplane{stroke:#C23A30; stroke-width:1.2; stroke-dasharray:5 3}
+.dwg-hanger .dimt{font-size:13px}
+.dwg .slot{fill:#F7F9F8}
+.dwg .csk{fill:none; stroke:#F7F9F8; stroke-width:1.5}
+.dwg .vmark{fill:#F7F9F8}
+.dwg .screw{fill:#C23A30}
+.dwg .move{stroke:#C23A30; stroke-width:2; fill:none}
+.dwg{background:#F7F9F8}
+</style><rect x="-185.00" y="-15.00" width="370.00" height="130.00" fill="#F7F9F8"/>
+<title id="hgT">Wall hanger, wall side</title>
+<desc id="hgD">Keyhole slot with seven notches 4 mm apart. Push the screw head through the round hole, slide sideways, and let it drop into a notch. The V mark on the top edge is the centre notch.</desc>
+<defs><marker id="ar3" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L8,4 L0,8 z" class="arrowhead accent"/></marker></defs>
+<rect class="hangerplate" x="-170" y="0" width="340" height="70" rx="15"/>
+<rect class="slot" x="-87.5" y="28" width="158.75" height="23"/>
+<circle class="slot" cx="-60" cy="33" r="11.25"/>
+<circle class="slot" cx="-40" cy="33" r="11.25"/>
+<circle class="slot" cx="-20" cy="33" r="11.25"/>
+<circle class="slot" cx="0" cy="33" r="11.25"/>
+<circle class="slot" cx="20" cy="33" r="11.25"/>
+<circle class="slot" cx="40" cy="33" r="11.25"/>
+<circle class="slot" cx="60" cy="33" r="11.25"/>
+<circle class="slot" cx="-87.5" cy="35.5" r="22.5"/>
+<circle class="csk" cx="-145" cy="35" r="17"/><circle class="slot" cx="-145" cy="35" r="8.5"/>
+<circle class="csk" cx="145" cy="35" r="17"/><circle class="slot" cx="145" cy="35" r="8.5"/>
+<path class="vmark" d="M-7,0 L7,0 L0,7.5 Z"/>
+<circle class="screw" cx="20" cy="33" r="10"/>
+<path class="move" d="M-87.5,63.5 C-57.5,80.5 -10,80.5 15,46" marker-end="url(#ar3)"/>
+<text class="dimt" x="0" y="106" text-anchor="middle">7 notches, 4 mm apart · screw head up to 8.4 mm</text>
+</svg>

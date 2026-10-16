@@ -1,0 +1,5 @@
+*.stl  binary
+*.3mf  binary
+*.png  binary
+*.step -diff linguist-generated
+*.svg  linguist-generated
