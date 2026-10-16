@@ -4,7 +4,7 @@
 # After editing:  python3 parts/render.py
 
 com = ""   # amazon.com, e.g. "yourid-20"
-de = ""    # amazon.de,  e.g. "yourid-21"
+de = "amazonpar049d-21"    # amazon.de,  e.g. "yourid-21"
 fr = ""    # amazon.fr,  e.g. "yourid-21"
 
 # Seeed Studio affiliate links (own programme, https://www.seeedstudio.com/blog/affiliate-program/).
