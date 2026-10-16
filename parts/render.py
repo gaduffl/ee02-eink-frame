@@ -1,4 +1,4 @@
-"""Render the parts list from parts.toml + affiliate.toml into README.md.
+"""Render the parts list from parts.toml into README.md.
 
 SPDX-License-Identifier: MIT
 
@@ -14,6 +14,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 README = os.path.join(os.path.dirname(HERE), "README.md")
 START, END = "<!-- PARTS:START -->", "<!-- PARTS:END -->"
 STORES = [("com", "amazon.com"), ("de", "amazon.de"), ("fr", "amazon.fr")]
+TAGS = {"com": "amazonpart0bf-20", "de": "amazonpar049d-21", "fr": "amazonpar0184-21"}
+SEEED = {"code": "51k9ycE", "template": "{url}?sensecap_affiliate={code}&referring_service=link"}
 DISCLOSURE = {
     "com": "As an Amazon Associate I earn from qualifying purchases.",
     "de": "Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.",
@@ -39,16 +41,13 @@ def link(store, entry, tags):
 
 
 def render():
-    data, tags = load("parts.toml"), load("affiliate.toml")
-    seeed = tags.get("seeed", {})
+    data, tags, seeed = load("parts.toml"), TAGS, SEEED
     seeed_code = seeed.get("code", "").strip()
-    seeed_tags = {k: v.strip() for k, v in seeed.items() if k not in ("code", "template") and v.strip()}
+    seeed_tags = {}
 
     def seeed_link(part):
-        if part["id"] in seeed_tags:
-            return seeed_tags[part["id"]]
         if seeed_code:
-            return seeed.get("template", "{url}").format(url=part["seeed"]["url"], code=seeed_code)
+            return seeed["template"].format(url=part["seeed"]["url"], code=seeed_code)
         return part["seeed"]["url"]
 
     out = []

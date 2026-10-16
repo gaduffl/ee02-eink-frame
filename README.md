@@ -123,7 +123,7 @@ Board and panel dimensions come from Seeed's published EE02 design files and the
 
 ## About the parts links
 
-The parts list is generated from [`parts/parts.toml`](parts/parts.toml) by `python3 parts/render.py`. Amazon tracking IDs, if any, are in [`parts/affiliate.toml`](parts/affiliate.toml); when they are set, the disclosure appears above the table. If you fork this repository, put your own IDs there or leave them empty. Listings marked with \* haven't been checked yet. Corrections and better listings are welcome.
+The parts list is generated from [`parts/parts.toml`](parts/parts.toml) by `python3 parts/render.py`. Listings marked with \* haven't been checked yet; corrections and better listings are welcome.
 
 ## Status and contributing
 

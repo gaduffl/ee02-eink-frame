@@ -7,7 +7,6 @@
 # plus an optional label (link text).
 # verified = true means the listing was checked against `needs` on the product page,
 # on the date in `checked`. Unverified product links are marked in the README.
-# Affiliate tracking IDs live in parts/affiliate.toml, never in this file.
 
 checked = ""
 
