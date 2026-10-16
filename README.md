@@ -15,21 +15,40 @@ A battery-powered 13.3″ colour e-paper picture frame built into an off-the-she
 |---|---|
 | ![Back of the frame with the case, hangers and bumpers](docs/images/frame.png) | ![All parts on one P1S plate](docs/images/plate.png) |
 
-## Bill of materials
+## Parts
 
-| Part | Qty | Notes |
-|---|---|---|
-| [Seeed XIAO ePaper Display Board EE02](https://wiki.seeedstudio.com/getting_started_with_ee02/) (V1.0) | 1 | With its XIAO ESP32-S3 Plus and the U.FL antenna |
-| 13.3″ E Ink Spectra 6 panel T133A01, 1200 × 1600 ([datasheet](https://files.seeedstudio.com/wiki/Epaper/EE02/13_3_E6_eInk_Display_module_Datasheet.pdf)) | 1 | The panel made for the EE02 |
-| LiPo 3.7 V, 60.5 × 91 × 6.5 mm, JST-PH 2.0 plug | 1 | Leads at one corner of the protection-board end, 62 mm from cell to plug. Mine is a Winfox cell from [this listing](https://www.amazon.de/dp/B0GDTXQDMD), sold as "1160100", but it measured 60.5 × 91 × 6.5 mm. **Check the polarity.** |
-| [boesner Quadro Eiche Glaswechselrahmen](https://www.boesner.com/quadro-eiche-glaswechselrahmen-25048), 30 × 40 cm | 1 | Oak, 20 × 30 mm profile with a 7 × 5.7 mm lip (measured) |
-| Passepartout 30 × 40 cm, 1.4 mm | 1 | Window centred over the panel's active area (202.8 × 270.4 mm) |
-| Double-sided foam tape, 1 mm | ≈ 40 × 135 mm | For example two strips of 19 mm tape |
-| Countersunk wood screws 3 × 12 mm | 4 (+4) | 2 per hanger, plus optionally 1 per bumper |
-| Wall screw | 1 per position | Head up to 8.4 mm, shank up to 4.2 mm, left about 5 mm proud |
-| PETG filament | ≈ 70 g | PLA works if the frame never gets direct sun |
+Everything except the EE02 board is available on Amazon. The links below go to amazon.com, amazon.de and amazon.fr. The two parts that aren't on Amazon, the EE02 board and the boesner frame, link to their makers.
 
-Other frames work if the side margin next to the panel is at least 45.6 mm and there are at least 16.2 mm between the back of the passepartout and the back edge of the frame. See [design notes](docs/design-notes.md).
+<!-- PARTS:START -->
+| Part | Qty | amazon.com | amazon.de | amazon.fr |
+|---|---|---|---|---|
+| **Seeed XIAO ePaper Display Board EE02 (V1.0)**<br><sub>Comes with the XIAO ESP32-S3 Plus and a U.FL antenna</sub><br><sub>[Seeed EE02 board / DIY kit](https://wiki.seeedstudio.com/getting_started_with_ee02/) · Not sold on Amazon at the time of writing. Seeed's DIY kit also contains the panel.</sub> | 1 | – | – | – |
+| **13.3″ E Ink Spectra 6 panel, 1200 × 1600, raw (no driver board)**<br><sub>Outline 284.7 × 208.8 × 0.85 mm, active area 270.4 × 202.8 mm</sub><br><sub>Tested panel: Seeed T133A01 from the EE02 kit. The Waveshare raw panel has the same outline and active area.</sub> | 1 | [Waveshare 13.3″ Spectra 6 raw panel](https://www.amazon.com/dp/B0DPBTT286) \* | [Waveshare 13.3″ Spectra 6 raw panel](https://www.amazon.de/dp/B0DPBTT286) \* | [Waveshare 13.3″ Spectra 6 raw panel](https://www.amazon.fr/dp/B0DPBTT286) \* |
+| **LiPo 3.7 V, 606090 (≈ 6 × 60 × 90 mm), JST-PH 2.0, with protection board**<br><sub>Max. 61.7 × 92.1 × 8.0 mm; leads ≥ 50 mm from cell to plug end. Check polarity.</sub><br><sub>Tested: Winfox cell measured 60.5 × 91 × 6.5 mm, leads at a corner, 62 mm.</sub> | 1 (+1 spare) | [Winfox 3.7 V 4000 mAh 606090, JST-PH](https://www.amazon.com/dp/B0GDQ7MFW5) \* | [LiPo 1S 4000 mAh 606090, JST-PH](https://www.amazon.de/dp/B098TB31S7) \* | [LiPo 1S 4000 mAh 606090, JST-PH](https://www.amazon.fr/dp/B098TB31S7) \* |
+| **USB charger for 1-cell LiPo with JST-PH 2.0 input**<br><sub>Charges the spare battery outside the frame (4.2 V, single cell)</sub> | 1 | [Adafruit Micro-Lipo charger](https://www.amazon.com/dp/B00OKJFEQ2) \* | [1S LiPo USB charger, JST-PH 2.0](https://www.amazon.de/dp/B0BN3X7MX9) \* | [search](https://www.amazon.fr/s?k=chargeur+lipo+1S+USB+JST+PH+2.0) |
+| **Wooden picture frame 30 × 40 cm (12 × 16 in works too), with glass**<br><sub>At least 20 mm from the back of the glass to the back edge of the frame; back board held by clips</sub><br><sub>[boesner Quadro Eiche (tested)](https://www.boesner.com/quadro-eiche-glaswechselrahmen-25048) · Tested: boesner Quadro Eiche Glaswechselrahmen, 20 × 30 mm profile.</sub> | 1 | [12 × 16 in shadow box, 1¾″ deep](https://www.amazon.com/dp/B0FH7LY7XT) \* | [BD ART oak box frame 30 × 40, 3 cm](https://www.amazon.de/dp/B0CLH8W45G) \* | [PHOTOLINI box frame 30 × 40, 3 cm](https://www.amazon.fr/dp/B08HJD9FXK) \* |
+| **Passepartout / mat, 30 × 40 cm (or 12 × 16 in), 1.4 mm, centred window**<br><sub>Window 196–202.8 × 264–270.4 mm, e.g. 200 × 267 mm</sub> | 1 | [Uncut 12 × 16 mat boards (cut the window yourself)](https://www.amazon.com/dp/B087Z4G2CP) \* | [AlphaUVplus mat, window made to order](https://www.amazon.de/dp/B08WCQD63W) \* | [CEANOTHE mat 30 × 40, 20 × 27 cm window](https://www.amazon.fr/dp/B004ZJ46PC) \* |
+| **Double-sided foam tape, 1 mm**<br><sub>1 mm thick, about 19 mm wide</sub> | ≈ 40 × 135 mm | [search](https://www.amazon.com/s?k=double+sided+foam+tape+1mm+19mm) | [search](https://www.amazon.de/s?k=doppelseitiges+Schaumklebeband+1mm+19mm) | [search](https://www.amazon.fr/s?k=ruban+adh%C3%A9sif+double+face+mousse+1mm+19mm) |
+| **Countersunk wood screws 3 × 12 mm (#4 × ½″)**<br><sub>2 per hanger, optionally 1 per bumper</sub> | 4 (+4) | [search](https://www.amazon.com/s?k=%234+x+1%2F2+flat+head+wood+screws) | [search](https://www.amazon.de/s?k=Senkkopf+Holzschrauben+3x12) | [search](https://www.amazon.fr/s?k=vis+%C3%A0+bois+t%C3%AAte+frais%C3%A9e+3x12) |
+| **PETG filament 1.75 mm**<br><sub>Any PETG; PLA only if the frame never gets direct sun</sub> | ≈ 70 g | [search](https://www.amazon.com/s?k=PETG+filament+1.75mm+1kg) | [search](https://www.amazon.de/s?k=PETG+Filament+1%2C75mm+1kg) | [search](https://www.amazon.fr/s?k=filament+PETG+1%2C75mm+1kg) |
+| **JST-PH 2.0 2-pin extension cable (optional)**<br><sub>Only if your battery's leads are shorter than 50 mm</sub> | 1 | [search](https://www.amazon.com/s?k=JST+PH+2.0+2+pin+extension+cable+male+female) | [search](https://www.amazon.de/s?k=JST+PH+2.0+2+Pin+Verl%C3%A4ngerungskabel) | [search](https://www.amazon.fr/s?k=rallonge+JST+PH+2.0+2+broches) |
+
+<sub>Search links open an Amazon search for the part; pick any listing that meets the requirement under the part name.<br>\* Suggested listing, not yet checked against the requirements. Check the size and connector before you buy.</sub>
+<!-- PARTS:END -->
+
+You also need a wall screw for each hanging position, with a head up to 8.4 mm and a shank up to 4.2 mm.
+
+### Choosing a frame
+
+The tested frame is a boesner Quadro Eiche, 30 × 40 cm, with a 20 × 30 mm profile. Another frame works if it meets three conditions:
+
+- **Size:** 30 × 40 cm, or 12 × 16 in, so that a passepartout with a centred window leaves at least 45.6 mm between the panel and the frame's rebate on the case side.
+- **Depth:** at least 16.2 mm between the back of the passepartout and the back edge of the frame, so the case stays inside the frame.
+- **Back board:** it has to hold the passepartout and the display against the glass. In a normal frame, cut a notch for the case out of the frame's own back board ([drawing](docs/images/back-board.svg)) and put the board back in.
+
+Deep box frames ("shadow boxes") hold the back board at the rear instead. In one of those, put the passepartout directly behind the glass and let the frame's spacer strips hold it there. Shorten the strip on the case side so it ends clear of the case.
+
+More in the [design notes](docs/design-notes.md).
 
 ## Print
 
@@ -54,10 +73,13 @@ The short version, with the frame lying face down and the display's flex edge at
 3. Plug in the antenna and drop its lead into the slot in the tray's lower wall.
 4. Fold the flex 180° around the panel's lower edge and plug it into the EE02's 60-pin connector.
 5. Tape the tray's right part to the passepartout margin, and slide the board lid in from the left.
-6. Lay the battery in, leads towards the board and the lead corner towards the frame edge. Plug it in, **red to +**.
-7. Slide the battery lid on, screw on the hangers and bumpers, and hang it.
+6. Lay the battery in, leads towards the board and the lead corner towards the frame edge. Plug it in, **red to +**, and slide the battery lid on.
+7. Cut a 133 × 148 mm notch out of the frame's back board and put the board back in around the case. It holds the passepartout and the display against the glass.
+8. Screw on the hangers and bumpers, and hang it.
 
-![Back view with dimensions](docs/images/back-view.svg)
+| Back view | Back board |
+|---|---|
+| ![Back view with dimensions](docs/images/back-view.svg) | ![Notch in the back board](docs/images/back-board.svg) |
 
 ## Firmware
 
@@ -94,9 +116,13 @@ LiPo cells don't like punctures, crushing or heat. The pocket leaves room around
 © 2026 gaduffl
 
 - The design (STL, STEP, 3MF), documentation and images are licensed under [CC BY-SA 4.0](LICENSE).
-- The Python sources in [`cad/`](cad) are licensed under the [MIT licence](LICENSE-MIT).
+- The Python sources in [`cad/`](cad) and [`parts/`](parts) are licensed under the [MIT licence](LICENSE-MIT).
 
 Board and panel dimensions come from Seeed's published EE02 design files and the T133A01 datasheet. No Seeed files are included.
+
+## About the parts links
+
+The parts list is generated from [`parts/parts.toml`](parts/parts.toml) by `python3 parts/render.py`. Amazon tracking IDs, if any, are in [`parts/affiliate.toml`](parts/affiliate.toml); when they are set, the disclosure appears above the table. If you fork this repository, put your own IDs there or leave them empty. Listings marked with \* haven't been checked yet. Corrections and better listings are welcome.
 
 ## Status and contributing
 

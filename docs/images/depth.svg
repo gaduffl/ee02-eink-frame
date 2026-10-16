@@ -35,6 +35,8 @@
 .dwg .lidband{fill:#E8EDF1; stroke:#2F58C9; stroke-width:.8}
 .dwg .backplane{stroke:#C23A30; stroke-width:1.2; stroke-dasharray:5 3}
 .dwg-hanger .dimt{font-size:13px}
+.dwg .board{fill:#D9CDB8; stroke:#7A6A50; stroke-width:.8}
+.dwg .caseghost{fill:none; stroke:#2F58C9; stroke-width:1; stroke-dasharray:4 3}
 .dwg .slot{fill:#F7F9F8}
 .dwg .csk{fill:none; stroke:#F7F9F8; stroke-width:1.5}
 .dwg .vmark{fill:#F7F9F8}

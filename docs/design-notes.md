@@ -14,6 +14,10 @@ The frame profile is 30 mm deep with a 5.7 mm lip. Behind 2 mm glass and the 1.4
 
 ![Depth stack](images/depth.svg)
 
+## Back board
+
+The frame's own back board holds the passepartout and the display against the glass. A rectangular notch around the case, with 3 mm of clearance, lets it lie flat against the passepartout everywhere else. The board is only a few millimetres thick, and the battery lid runs 13 mm above the passepartout, so the lid slides out over the board and a swap doesn't need the board removed. `cad/diagrams.py` derives the notch from the case position, so it follows any change to the model.
+
 ## Battery and lead route
 
 The battery is a flat 60.5 × 91 × 6.5 mm cell, and its leads are only 62 mm long from cell to plug. The EE02's JST-PH socket is at the right edge of the board, and the plug goes in from the right. The battery can't sit beside the board, because there are only 44 mm between the board and the frame. So it sits right above the board, with the protection-board end facing it and the lead corner on the frame-edge side. The leads then run diagonally through an empty bay to the right of the board, straight into the plug. That takes about 47 mm, so roughly 9 mm of wire is left over.

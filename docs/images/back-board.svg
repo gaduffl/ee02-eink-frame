@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="940" viewBox="-70 -30 480.0 470.0" role="img" aria-labelledby="bbT bbD" class="dwg dwg-board"><style>
+.dwg text{font-family:Helvetica, Arial, sans-serif}
+.dwg .wood{fill:#C49A6C; stroke:#7A5634; stroke-width:.6}
+.dwg .pp{fill:#F3F2EC; stroke:#A3A6A2; stroke-width:.4}
+.dwg .panel{fill:#7C838B}
+.dwg .aa{fill:none; stroke:#FFFFFF; stroke-width:.6; stroke-dasharray:4 3; opacity:.8}
+.dwg .flex{fill:#D5842A}
+.dwg .foldmark{stroke:#7A4A10; stroke-width:1.8}
+.dwg .case{fill:#2F58C9; fill-opacity:.2; stroke:#2F58C9; stroke-width:1.2}
+.dwg .tape{fill:url(#hatch)}
+.dwg .hatch{stroke:#2F58C9; stroke-width:1}
+.dwg .pcb{fill:#1D2320; fill-opacity:.88}
+.dwg .batt{fill:#A5ACB6; stroke:#2B3136; stroke-width:.4}
+.dwg .ant{fill:#1E2023}
+.dwg .cable{stroke:#1E2023; stroke-width:1; fill:none}
+.dwg .window{fill:none; stroke:#C23A30; stroke-width:.9; stroke-dasharray:3 2}
+.dwg .slidepath{fill:#E8EDF1; fill-opacity:.35; stroke:#2F58C9; stroke-width:.9; stroke-dasharray:4 3}
+.dwg .slidearrow{stroke:#2F58C9; stroke-width:1.6; fill:none}
+.dwg .keyopen{fill:#C23A30}
+.dwg .leads{stroke:#C23A30; stroke-width:1.4; fill:none; stroke-linejoin:round}
+.dwg .hanger,.dwg .bumper,.dwg .hangerplate{fill:#2F58C9}
+.dwg .dim{stroke:#2B3136; stroke-width:.6; fill:none}
+.dwg .arrowhead{fill:#2B3136}
+.dwg .arrowhead.accent{fill:#C23A30}
+.dwg .dimt{font:500 9.5px Menlo, Consolas, "DejaVu Sans Mono", monospace; fill:#2B3136}
+.dwg .lbl{font-size:10.5px; fill:#14181B}
+.dwg .onpanel{fill:#FFFFFF}
+.dwg .small{font:500 8.5px Menlo, Consolas, "DejaVu Sans Mono", monospace}
+.dwg .leader{stroke:#6B757D; stroke-width:.5; fill:none}
+.dwg .cap{font:500 9px Menlo, Consolas, "DejaVu Sans Mono", monospace; letter-spacing:.14em; fill:#55606A}
+.dwg-depth .lbl{font-size:13.5px}
+.dwg-depth .dimt{font-size:12.5px}
+.dwg .glass{fill:#CFE2EA; stroke:#2B3136; stroke-width:.3; opacity:.9}
+.dwg .tapeband{fill:#E0AE10}
+.dwg .lidband{fill:#E8EDF1; stroke:#2F58C9; stroke-width:.8}
+.dwg .backplane{stroke:#C23A30; stroke-width:1.2; stroke-dasharray:5 3}
+.dwg-hanger .dimt{font-size:13px}
+.dwg .board{fill:#D9CDB8; stroke:#7A6A50; stroke-width:.8}
+.dwg .caseghost{fill:none; stroke:#2F58C9; stroke-width:1; stroke-dasharray:4 3}
+.dwg .slot{fill:#F7F9F8}
+.dwg .csk{fill:none; stroke:#F7F9F8; stroke-width:1.5}
+.dwg .vmark{fill:#F7F9F8}
+.dwg .screw{fill:#C23A30}
+.dwg .move{stroke:#C23A30; stroke-width:2; fill:none}
+.dwg{background:#F7F9F8}
+</style><rect x="-70.00" y="-30.00" width="480.00" height="470.00" fill="#F7F9F8"/>
+<title id="bbT">Cutting the back board</title>
+<desc id="bbD">The frame's back board seen from behind with the frame face down. A 133 by 148 mm notch is cut from the right edge, starting 69 mm above the bottom edge, so the board fits around the case and still presses the passepartout and the display against the glass.</desc>
+<defs><marker id="arb" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" class="arrowhead"/></marker></defs>
+<path class="board" d="M0,400 L300,400 L300,331 L167,331 L167,183 L300,183 L300,0 L0,0 Z"/>
+<path class="caseghost" d="M170.56,327.66 L298,327.66 L298,186.08 L228.16,186.08 L228.16,278.18 L170.56,278.18 Z"/>
+<text class="lbl" x="197.58" y="213" text-anchor="middle">cut out</text>
+<text class="lbl" x="150" y="112" text-anchor="middle">back board</text>
+<text class="lbl small" x="150" y="125" text-anchor="middle">back side up, frame face down</text>
+<text class="lbl" x="150" y="416" text-anchor="middle">bottom edge (display flex side)</text>
+<path class="dim" d="M167,173 H300" marker-start="url(#arb)" marker-end="url(#arb)"/>
+<text class="dimt" x="233.5" y="170" text-anchor="middle">133</text>
+<path class="dim" d="M312,331 V183" marker-start="url(#arb)" marker-end="url(#arb)"/>
+<text class="dimt" x="316" y="260" text-anchor="start">148</text>
+<path class="dim" d="M312,400 V331" marker-start="url(#arb)" marker-end="url(#arb)"/>
+<text class="dimt" x="316" y="368.5" text-anchor="start">69</text>
+<path class="dim" d="M0,-10 H300" marker-start="url(#arb)" marker-end="url(#arb)"/>
+<text class="dimt" x="150" y="-13" text-anchor="middle">300</text>
+<path class="dim" d="M-14,400 V0" marker-start="url(#arb)" marker-end="url(#arb)"/>
+<text class="dimt" x="-18" y="203" text-anchor="end">400</text>
+<text class="cap" x="150" y="432" text-anchor="middle">BACK BOARD · MM · DASHED: CASE</text>
+</svg>

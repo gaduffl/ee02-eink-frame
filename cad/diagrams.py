@@ -181,6 +181,54 @@ def hanger_diagram():
     return "\n".join(s)
 
 
+def board_cut(clear=3.0):
+    """notch in the frame's back board around the case (frame coords, back view); rounded outward to whole mm"""
+    x0 = math.floor(C.TRAY_X - clear)
+    y0 = math.floor(C.TRAY_Y - clear)
+    y1 = math.ceil(C.TRAY_Y + M.Y_T + clear)
+    return dict(x0=x0, y0=y0, y1=y1, w=C.PP_W - x0, h=y1 - y0)
+
+
+def back_board():
+    W, H = C.PP_W, C.PP_H
+    cut = board_cut()
+    Y = lambda y: H - y
+    left, right, top, bot = 70, 110, 30, 40
+    s = []
+    a = s.append
+    a(f'<svg viewBox="{-left} {-top} {W + left + right} {H + top + bot}" role="img" aria-labelledby="bbT bbD" class="dwg dwg-board">')
+    a('<title id="bbT">Cutting the back board</title>')
+    a(f'<desc id="bbD">The frame\'s back board seen from behind with the frame face down. A {F(cut["w"])} by {F(cut["h"])} mm notch is cut from the right edge, starting {F(cut["y0"])} mm above the bottom edge, so the board fits around the case and still presses the passepartout and the display against the glass.</desc>')
+    a('<defs><marker id="arb" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse">'
+      '<path d="M0,0 L8,4 L0,8 z" class="arrowhead"/></marker></defs>')
+    pts = [(0, 0), (W, 0), (W, cut["y0"]), (cut["x0"], cut["y0"]), (cut["x0"], cut["y1"]), (W, cut["y1"]), (W, H), (0, H)]
+    a('<path class="board" d="M' + " L".join(f"{F(x)},{F(Y(y))}" for x, y in pts) + ' Z"/>')
+    tx, ty = C.TRAY_X, C.TRAY_Y
+    cpts = [(0, 0), (M.X_R, 0), (M.X_R, M.Y_T), (M.X_CO, M.Y_T), (M.X_CO, M.Y_BS), (0, M.Y_BS)]
+    a('<path class="caseghost" d="M' + " L".join(f"{F(tx + x)},{F(Y(ty + y))}" for x, y in cpts) + ' Z"/>')
+    a(f'<text class="lbl" x="{F((cut["x0"] + C.TRAY_X + M.X_CO) / 2)}" y="{F(Y(cut["y1"] - 30))}" text-anchor="middle">cut out</text>')
+    a(f'<text class="lbl" x="{F(W / 2)}" y="{F(Y(H * 0.72))}" text-anchor="middle">back board</text>')
+    a(f'<text class="lbl small" x="{F(W / 2)}" y="{F(Y(H * 0.72) + 13)}" text-anchor="middle">back side up, frame face down</text>')
+    a(f'<text class="lbl" x="{F(W / 2)}" y="{F(Y(0) + 16)}" text-anchor="middle">bottom edge (display flex side)</text>')
+
+    def dim_h(x0, x1, y, text, dy=-3):
+        a(f'<path class="dim" d="M{F(x0)},{F(Y(y))} H{F(x1)}" marker-start="url(#arb)" marker-end="url(#arb)"/>')
+        a(f'<text class="dimt" x="{F((x0 + x1) / 2)}" y="{F(Y(y) + dy)}" text-anchor="middle">{text}</text>')
+
+    def dim_v(x, y0, y1, text, left=False):
+        a(f'<path class="dim" d="M{F(x)},{F(Y(y0))} V{F(Y(y1))}" marker-start="url(#arb)" marker-end="url(#arb)"/>')
+        a(f'<text class="dimt" x="{F(x - 4 if left else x + 4)}" y="{F((Y(y0) + Y(y1)) / 2 + 3)}" text-anchor="{"end" if left else "start"}">{text}</text>')
+
+    dim_h(cut["x0"], W, cut["y1"] + 10, F(cut["w"]))
+    dim_v(W + 12, cut["y0"], cut["y1"], F(cut["h"]))
+    dim_v(W + 12, 0, cut["y0"], F(cut["y0"]))
+    dim_h(0, W, H + 10, F(W))
+    dim_v(-14, 0, H, F(H), left=True)
+    a(f'<text class="cap" x="{F(W / 2)}" y="{F(Y(0) + 32)}" text-anchor="middle">BACK BOARD · MM · DASHED: CASE</text>')
+    a('</svg>')
+    return "\n".join(s)
+
+
 STYLE = """
 .dwg text{font-family:Helvetica, Arial, sans-serif}
 .dwg .wood{fill:#C49A6C; stroke:#7A5634; stroke-width:.6}
@@ -218,6 +266,8 @@ STYLE = """
 .dwg .lidband{fill:#E8EDF1; stroke:#2F58C9; stroke-width:.8}
 .dwg .backplane{stroke:#C23A30; stroke-width:1.2; stroke-dasharray:5 3}
 .dwg-hanger .dimt{font-size:13px}
+.dwg .board{fill:#D9CDB8; stroke:#7A6A50; stroke-width:.8}
+.dwg .caseghost{fill:none; stroke:#2F58C9; stroke-width:1; stroke-dasharray:4 3}
 .dwg .slot{fill:#F7F9F8}
 .dwg .csk{fill:none; stroke:#F7F9F8; stroke-width:1.5}
 .dwg .vmark{fill:#F7F9F8}
@@ -239,7 +289,7 @@ def standalone(svg):
 if __name__ == "__main__":
     out = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "docs", "images")
     os.makedirs(out, exist_ok=True)
-    for n, f in [("back-view", back_view), ("depth", depth_stack), ("hanger", hanger_diagram)]:
+    for n, f in [("back-view", back_view), ("depth", depth_stack), ("hanger", hanger_diagram), ("back-board", back_board)]:
         with open(os.path.join(out, f"{n}.svg"), "w") as fh:
             fh.write(standalone(f()))
     print("wrote", out)

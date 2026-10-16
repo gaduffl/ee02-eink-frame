@@ -1,0 +1,8 @@
+# Amazon Associates tracking IDs, one per store. Leave empty for plain links without a tag.
+# Each store is a separate Associates programme with its own ID, and the repository URL
+# has to be listed as a website in each account.
+# After editing:  python3 parts/render.py
+
+com = ""   # amazon.com, e.g. "yourid-20"
+de = ""    # amazon.de,  e.g. "yourid-21"
+fr = ""    # amazon.fr,  e.g. "yourid-21"

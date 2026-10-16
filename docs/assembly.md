@@ -8,6 +8,7 @@ All directions assume the frame is lying **face down** with the display's flex e
 
 - The picture has to sit centred in the passepartout. The case reaches 43.6 mm past the panel's edge and has 2.0 mm to spare to the frame's rebate wall.
 - You need at least 16.2 mm from the back of the passepartout to the back edge of the frame: 14.2 mm case, 1 mm tape and 0.7 mm grip ribs, plus a little margin.
+- The frame's back board has to go back in around the case (step 12). Box frames whose board sits at the rear instead: hold the passepartout against the glass with the frame's spacer strips, shortened on the case side.
 - The battery pocket takes a cell up to 61.7 × 92.1 × 8.0 mm. The leads need about 47 mm from the cell's corner to the back of the JST plug.
 
 ![Depth stack beside the case](images/depth.svg)
@@ -25,12 +26,16 @@ All directions assume the frame is lying **face down** with the display's flex e
 9. Lay the battery on its ribs, with the end that has the leads towards the board and the lead corner on the frame-edge side. Turn the cell over if its leads are on the other corner. Run the leads diagonally through the bay to the right of the board and plug in.
 10. Slide the battery lid in from the frame-centre side until it clicks.
 11. Stick the antenna flat on the passepartout below the case, away from the battery and the board.
-12. Close the frame. The battery lid comes off by sliding about 140 mm towards the frame centre, so leave the back board out or take it off for a swap.
+12. Cut a notch out of the frame's back board. It is 133 mm wide, measured from the board's right edge, and 148 mm tall, starting 69 mm above the bottom edge. The drawing below shows the board from its back side, with the frame lying face down. Check it against your case before you cut. Put the board back in around the case and close the clips. It holds the passepartout and the display against the glass, so nothing falls out. The antenna lead can run under the board.
+
+![Notch in the back board](images/back-board.svg)
+
+The battery lid slides out over the back board, so the board stays in during a battery swap. The lid moves about 140 mm towards the frame centre; keep that area clear of anything taller than about 12 mm.
 
 ## Swap the battery
 
 1. Take the frame down and lay it face down.
-2. Push the battery lid's chevrons towards the middle of the frame and slide the lid off.
+2. Push the battery lid's chevrons towards the middle of the frame and slide the lid off. It slides over the back board, so the board stays in.
 3. Pull the JST plug by its body, not the wires. Lift the battery out at the notch in the pocket wall.
 4. Put the new battery in the same way round, plug in (red to +) and lay the leads through the bay.
 5. Slide the lid back on until it clicks.
