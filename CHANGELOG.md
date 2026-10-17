@@ -1,5 +1,10 @@
 # Changelog
 
+## Docs — 2026-10-17
+
+- Photos of the finished frame.
+- Back board: corner notch 133 × 217 mm, matching the real build; the back board's own hangers can be used instead of the printed ones.
+
 ## Docs — 2026-10-16
 
 - Parts list with Amazon links for the US, Germany and France.

@@ -16,7 +16,7 @@ The frame profile is 30 mm deep with a 5.7 mm lip. Behind 2 mm glass and the 1.4
 
 ## Back board
 
-The frame's own back board holds the passepartout and the display against the glass. A rectangular notch around the case, with 3 mm of clearance, lets it lie flat against the passepartout everywhere else. The board is only a few millimetres thick, and the battery lid runs 13 mm above the passepartout, so the lid slides out over the board and a swap doesn't need the board removed. `cad/diagrams.py` derives the notch from the case position, so it follows any change to the model.
+The frame's own back board holds the passepartout and the display against the glass. A corner notch around the case, with 3 mm of clearance, lets it lie flat against the passepartout everywhere else. The notch runs down to the bottom edge, which leaves the flex fold and the antenna uncovered. The board is only a few millimetres thick, and the battery lid runs 13 mm above the passepartout, so the lid slides out over the board and a swap doesn't need the board removed. `cad/diagrams.py` derives the notch from the case position, so it follows any change to the model.
 
 ## Battery and lead route
 

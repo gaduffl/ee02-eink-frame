@@ -2,7 +2,7 @@
 
 A battery-powered 13.3″ colour e-paper picture frame built into an off-the-shelf 30 × 40 cm wooden frame. A Seeed XIAO ePaper EE02 board drives an E Ink Spectra 6 panel behind a passepartout, and runs the open-source [esp32-photoframe](https://github.com/aitjcize/esp32-photoframe) firmware. Everything sits in a 3D-printed case that is taped to the back of the passepartout. The battery comes out without tools, and printed hangers let the frame hang in portrait or landscape.
 
-![The case behind the display's lower corner, battery lid slid part way off](docs/images/case.png)
+![The finished frame on the wall, showing a morning dashboard on the 13.3″ colour e-paper panel](docs/images/photos/dashboard.jpg)
 
 - **No changes to the frame.** The case is taped to the passepartout's side margin, and the panel is taped behind the passepartout window.
 - **The flex sets the position.** The display flex folds 180° around the panel's lower edge and plugs straight into the EE02, which sits behind the panel's corner.
@@ -11,9 +11,15 @@ A battery-powered 13.3″ colour e-paper picture frame built into an off-the-she
 - **One print plate.** All nine parts fit one Bambu Lab P1S plate, need no supports and take about 70 g of PETG.
 - **Parametric.** The case is a [CadQuery](https://cadquery.readthedocs.io/) script, so the battery size, tape thickness and fits can be changed.
 
-| Whole frame, back view | Print plate |
+| Back, lids on | Back, lids open |
 |---|---|
-| ![Back of the frame with the case, hangers and bumpers](docs/images/frame.png) | ![All parts on one P1S plate](docs/images/plate.png) |
+| ![Back of the frame: the case sits in a corner notch of the back board](docs/images/photos/back-closed.jpg) | ![Lids off: the EE02 board, and the battery with its leads running to the JST socket](docs/images/photos/back-open.jpg) |
+
+<sub>Back photos are shown frame face down, with the display's flex edge at the bottom, the same way round as the drawings.</sub>
+
+| CAD render | Print plate |
+|---|---|
+| ![Render of the case behind the display's lower corner](docs/images/case.png) | ![All parts on one P1S plate](docs/images/plate.png) |
 
 ## Parts
 
@@ -84,8 +90,8 @@ The short version, with the frame lying face down and the display's flex edge at
 4. Fold the flex 180° around the panel's lower edge and plug it into the EE02's 60-pin connector.
 5. Tape the tray's right part to the passepartout margin, and slide the board lid in from the left.
 6. Lay the battery in, leads towards the board and the lead corner towards the frame edge. Plug it in, **red to +**, and slide the battery lid on.
-7. Cut a 133 × 148 mm notch out of the frame's back board and put the board back in around the case. It holds the passepartout and the display against the glass.
-8. Screw on the hangers and bumpers, and hang it.
+7. Cut a 133 × 217 mm notch out of the lower right corner of the frame's back board, and put the board back in around the case. It holds the passepartout and the display against the glass.
+8. Hang it. If the back board has its own hangers, as the boesner one does, use those. Otherwise screw on the printed hangers and bumpers.
 
 | Back view | Back board |
 |---|---|

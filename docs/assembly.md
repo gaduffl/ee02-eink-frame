@@ -26,9 +26,11 @@ All directions assume the frame is lying **face down** with the display's flex e
 9. Lay the battery on its ribs, with the end that has the leads towards the board and the lead corner on the frame-edge side. Turn the cell over if its leads are on the other corner. Run the leads diagonally through the bay to the right of the board and plug in.
 10. Slide the battery lid in from the frame-centre side until it clicks.
 11. Stick the antenna flat on the passepartout below the case, away from the battery and the board.
-12. Cut a notch out of the frame's back board. It is 133 mm wide, measured from the board's right edge, and 148 mm tall, starting 69 mm above the bottom edge. The drawing below shows the board from its back side, with the frame lying face down. Check it against your case before you cut. Put the board back in around the case and close the clips. It holds the passepartout and the display against the glass, so nothing falls out. The antenna lead can run under the board.
+12. Cut a notch out of the lower right corner of the frame's back board, 133 mm wide and 217 mm tall. The drawing below shows the board from its back side, with the frame lying face down. Check it against your case before you cut. Put the board back in around the case and close the clips. It holds the passepartout and the display against the glass, so nothing falls out.
 
 ![Notch in the back board](images/back-board.svg)
+
+![Back of the finished frame with the back board in place](images/photos/back-closed.jpg)
 
 The battery lid slides out over the back board, so the board stays in during a battery swap. The lid moves about 140 mm towards the frame centre; keep that area clear of anything taller than about 12 mm.
 
@@ -47,6 +49,8 @@ The keys and the power switch are reachable at any time through the 45 mm openin
 With leads this short, the battery has to sit in front of the XIAO's USB-C socket. With the battery out, the socket faces the empty pocket, so you can flash the board or run the frame from USB. The cable can leave through the notch in the pocket wall with the lid closed.
 
 ## Hang it
+
+If the frame's back board has its own hangers, as the boesner one does, use those and skip the printed parts. The printed hangers are for frames without them, or for when you want the levelling notches.
 
 1. Screw one hanger, wall side out, centred on the short side opposite the flex edge for portrait. Screw the other centred on the long side farther from the case for landscape. Each takes two 3 × 12 mm countersunk wood screws. The V notch marks the centre.
 2. Fix the four bumpers in the corners with a screw or tape. They are 5 mm, like the hangers, so the frame hangs parallel to the wall.

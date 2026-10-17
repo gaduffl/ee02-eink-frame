@@ -182,9 +182,10 @@ def hanger_diagram():
 
 
 def board_cut(clear=3.0):
-    """notch in the frame's back board around the case (frame coords, back view); rounded outward to whole mm"""
+    """corner notch in the frame's back board around the case (frame coords, back view); whole mm, outward.
+    It runs down to the bottom edge, so the flex fold and the antenna stay uncovered."""
     x0 = math.floor(C.TRAY_X - clear)
-    y0 = math.floor(C.TRAY_Y - clear)
+    y0 = 0
     y1 = math.ceil(C.TRAY_Y + M.Y_T + clear)
     return dict(x0=x0, y0=y0, y1=y1, w=C.PP_W - x0, h=y1 - y0)
 
@@ -198,10 +199,10 @@ def back_board():
     a = s.append
     a(f'<svg viewBox="{-left} {-top} {W + left + right} {H + top + bot}" role="img" aria-labelledby="bbT bbD" class="dwg dwg-board">')
     a('<title id="bbT">Cutting the back board</title>')
-    a(f'<desc id="bbD">The frame\'s back board seen from behind with the frame face down. A {F(cut["w"])} by {F(cut["h"])} mm notch is cut from the right edge, starting {F(cut["y0"])} mm above the bottom edge, so the board fits around the case and still presses the passepartout and the display against the glass.</desc>')
+    a(f'<desc id="bbD">The frame\'s back board seen from behind with the frame face down. A {F(cut["w"])} by {F(cut["h"])} mm notch is cut out of the lower right corner, so the board fits around the case and still presses the passepartout and the display against the glass.</desc>')
     a('<defs><marker id="arb" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse">'
       '<path d="M0,0 L8,4 L0,8 z" class="arrowhead"/></marker></defs>')
-    pts = [(0, 0), (W, 0), (W, cut["y0"]), (cut["x0"], cut["y0"]), (cut["x0"], cut["y1"]), (W, cut["y1"]), (W, H), (0, H)]
+    pts = [(0, 0), (cut["x0"], 0), (cut["x0"], cut["y1"]), (W, cut["y1"]), (W, H), (0, H)]
     a('<path class="board" d="M' + " L".join(f"{F(x)},{F(Y(y))}" for x, y in pts) + ' Z"/>')
     tx, ty = C.TRAY_X, C.TRAY_Y
     cpts = [(0, 0), (M.X_R, 0), (M.X_R, M.Y_T), (M.X_CO, M.Y_T), (M.X_CO, M.Y_BS), (0, M.Y_BS)]
@@ -220,8 +221,7 @@ def back_board():
         a(f'<text class="dimt" x="{F(x - 4 if left else x + 4)}" y="{F((Y(y0) + Y(y1)) / 2 + 3)}" text-anchor="{"end" if left else "start"}">{text}</text>')
 
     dim_h(cut["x0"], W, cut["y1"] + 10, F(cut["w"]))
-    dim_v(W + 12, cut["y0"], cut["y1"], F(cut["h"]))
-    dim_v(W + 12, 0, cut["y0"], F(cut["y0"]))
+    dim_v(W + 12, 0, cut["y1"], F(cut["h"]))
     dim_h(0, W, H + 10, F(W))
     dim_v(-14, 0, H, F(H), left=True)
     a(f'<text class="cap" x="{F(W / 2)}" y="{F(Y(0) + 32)}" text-anchor="middle">BACK BOARD · MM · DASHED: CASE</text>')

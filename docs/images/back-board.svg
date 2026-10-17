@@ -45,9 +45,9 @@
 .dwg{background:#F7F9F8}
 </style><rect x="-70.00" y="-30.00" width="480.00" height="470.00" fill="#F7F9F8"/>
 <title id="bbT">Cutting the back board</title>
-<desc id="bbD">The frame's back board seen from behind with the frame face down. A 133 by 148 mm notch is cut from the right edge, starting 69 mm above the bottom edge, so the board fits around the case and still presses the passepartout and the display against the glass.</desc>
+<desc id="bbD">The frame's back board seen from behind with the frame face down. A 133 by 217 mm notch is cut out of the lower right corner, so the board fits around the case and still presses the passepartout and the display against the glass.</desc>
 <defs><marker id="arb" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L8,4 L0,8 z" class="arrowhead"/></marker></defs>
-<path class="board" d="M0,400 L300,400 L300,331 L167,331 L167,183 L300,183 L300,0 L0,0 Z"/>
+<path class="board" d="M0,400 L167,400 L167,183 L300,183 L300,0 L0,0 Z"/>
 <path class="caseghost" d="M170.56,327.66 L298,327.66 L298,186.08 L228.16,186.08 L228.16,278.18 L170.56,278.18 Z"/>
 <text class="lbl" x="197.58" y="213" text-anchor="middle">cut out</text>
 <text class="lbl" x="150" y="112" text-anchor="middle">back board</text>
@@ -55,10 +55,8 @@
 <text class="lbl" x="150" y="416" text-anchor="middle">bottom edge (display flex side)</text>
 <path class="dim" d="M167,173 H300" marker-start="url(#arb)" marker-end="url(#arb)"/>
 <text class="dimt" x="233.5" y="170" text-anchor="middle">133</text>
-<path class="dim" d="M312,331 V183" marker-start="url(#arb)" marker-end="url(#arb)"/>
-<text class="dimt" x="316" y="260" text-anchor="start">148</text>
-<path class="dim" d="M312,400 V331" marker-start="url(#arb)" marker-end="url(#arb)"/>
-<text class="dimt" x="316" y="368.5" text-anchor="start">69</text>
+<path class="dim" d="M312,400 V183" marker-start="url(#arb)" marker-end="url(#arb)"/>
+<text class="dimt" x="316" y="294.5" text-anchor="start">217</text>
 <path class="dim" d="M0,-10 H300" marker-start="url(#arb)" marker-end="url(#arb)"/>
 <text class="dimt" x="150" y="-13" text-anchor="middle">300</text>
 <path class="dim" d="M-14,400 V0" marker-start="url(#arb)" marker-end="url(#arb)"/>
