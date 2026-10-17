@@ -131,8 +131,9 @@ LiPo cells don't like punctures, crushing or heat. The pocket leaves room around
 
 © 2026 gaduffl
 
-- The design (STL, STEP, 3MF), documentation and images are licensed under [CC BY-SA 4.0](LICENSE).
+- The design (STL, STEP, 3MF), documentation, drawings and renders are licensed under [CC BY-SA 4.0](LICENSE).
 - The Python sources in [`cad/`](cad) are licensed under the [MIT licence](LICENSE-MIT).
+- The photos in [`docs/images/photos/`](docs/images/photos) are not covered by either licence. © 2026 gaduffl, all rights reserved.
 
 Board and panel dimensions come from Seeed's published EE02 design files and the T133A01 datasheet. No Seeed files are included.
 
