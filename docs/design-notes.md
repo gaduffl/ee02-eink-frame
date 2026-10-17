@@ -20,7 +20,7 @@ The frame's own back board holds the passepartout and the display against the gl
 
 ## Battery and lead route
 
-The battery is a flat 60.5 × 91 × 6.5 mm cell, and its leads are only 62 mm long from cell to plug. The EE02's JST-PH socket is at the right edge of the board, and the plug goes in from the right. The battery can't sit beside the board, because there are only 44 mm between the board and the frame. So it sits right above the board, with the protection-board end facing it and the lead corner on the frame-edge side. The leads then run diagonally through an empty bay to the right of the board, straight into the plug. That takes about 47 mm, so roughly 9 mm of wire is left over.
+The battery is a flat 706090 cell (3.7 V, 5000 mAh), measured at 60.5 × 91 × 6.5 mm, and its leads are only 62 mm long from cell to plug. The pocket takes up to 61.7 × 92.1 × 8.0 mm, so a thinner 606090 fits without changes; it just has 0.5 mm more room under the lid. The EE02's JST-PH socket is at the right edge of the board, and the plug goes in from the right. The battery can't sit beside the board, because there are only 44 mm between the board and the frame. So it sits right above the board, with the protection-board end facing it and the lead corner on the frame-edge side. The leads then run diagonally through an empty bay to the right of the board, straight into the plug. That takes about 47 mm, so roughly 9 mm of wire is left over.
 
 The trade-off: the cell sits in front of the XIAO's USB-C socket, so USB-C only works with the battery out. A longer lead, or a short JST-PH extension, would let the pocket move up and free the socket. Change the layout in `ee02_frame_case.py` if you go that way.
 

@@ -9,7 +9,7 @@ All directions assume the frame is lying **face down** with the display's flex e
 - The picture has to sit centred in the passepartout. The case reaches 43.6 mm past the panel's edge and has 2.0 mm to spare to the frame's rebate wall.
 - You need at least 16.2 mm from the back of the passepartout to the back edge of the frame: 14.2 mm case, 1 mm tape and 0.7 mm grip ribs, plus a little margin.
 - The frame's back board has to go back in around the case (step 12). Box frames whose board sits at the rear instead: hold the passepartout against the glass with the frame's spacer strips, shortened on the case side.
-- The battery pocket takes a cell up to 61.7 × 92.1 × 8.0 mm. The leads need about 47 mm from the cell's corner to the back of the JST plug.
+- The battery pocket takes a cell up to 61.7 × 92.1 × 8.0 mm: a 706090 LiPo like the tested one, or a 606090. The leads have to leave at a corner of the short end and need about 47 mm from there to the back of the JST plug.
 
 ![Depth stack beside the case](images/depth.svg)
 

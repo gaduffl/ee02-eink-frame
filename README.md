@@ -2,7 +2,7 @@
 
 A battery-powered 13.3″ colour e-paper picture frame built into an off-the-shelf 30 × 40 cm wooden frame. A Seeed XIAO ePaper EE02 board drives an E Ink Spectra 6 panel behind a passepartout, and runs the open-source [esp32-photoframe](https://github.com/aitjcize/esp32-photoframe) firmware. Everything sits in a 3D-printed case that is taped to the back of the passepartout. The battery comes out without tools, and printed hangers let the frame hang in portrait or landscape.
 
-![The finished frame on the wall, showing a morning dashboard on the 13.3″ colour e-paper panel](docs/images/photos/dashboard.jpg)
+![The finished frame on the wall, showing a photo on the 13.3″ colour e-paper panel](docs/images/photos/picture.jpg)
 
 - **No changes to the frame.** The case is taped to the passepartout's side margin, and the panel is taped behind the passepartout window.
 - **The flex sets the position.** The display flex folds 180° around the panel's lower edge and plugs straight into the EE02, which sits behind the panel's corner.
@@ -11,9 +11,9 @@ A battery-powered 13.3″ colour e-paper picture frame built into an off-the-she
 - **One print plate.** All nine parts fit one Bambu Lab P1S plate, need no supports and take about 70 g of PETG.
 - **Parametric.** The case is a [CadQuery](https://cadquery.readthedocs.io/) script, so the battery size, tape thickness and fits can be changed.
 
-| Back, lids on | Back, lids open |
-|---|---|
-| ![Back of the frame: the case sits in a corner notch of the back board](docs/images/photos/back-closed.jpg) | ![Lids off: the EE02 board, and the battery with its leads running to the JST socket](docs/images/photos/back-open.jpg) |
+| As a dashboard | Back, lids on | Back, lids open |
+|---|---|---|
+| ![The same frame showing a morning dashboard](docs/images/photos/dashboard.jpg) | ![Back of the frame: the case sits in a corner notch of the back board](docs/images/photos/back-closed.jpg) | ![Lids off: the EE02 board, and the battery with its leads running to the JST socket](docs/images/photos/back-open.jpg) |
 
 <sub>Back photos are shown frame face down, with the display's flex edge at the bottom, the same way round as the drawings.</sub>
 
@@ -42,7 +42,7 @@ Links for amazon.com, amazon.de and amazon.fr.
 
 | Part | Qty | amazon.com | amazon.de | amazon.fr |
 |---|---|---|---|---|
-| **LiPo 3.7 V, 606090 (≈ 6 × 60 × 90 mm), JST-PH 2.0, with protection board**<br><sub>Max. 61.7 × 92.1 × 8.0 mm; leads ≥ 50 mm from cell to plug end. Check polarity.</sub><br><sub>**Not tested:** the cell I used (Winfox, 60.5 × 91 × 6.5 mm, leads at a corner, 62 mm) is sold out everywhere. These listings are the same size, but check that they fit before you buy.</sub> | 1 | [Winfox 3.7 V 4000 mAh 606090, JST-PH](https://www.amazon.com/dp/B0GDQ7MFW5?tag=amazonpart0bf-20) \* | [LiPo 1S 4000 mAh 606090, JST-PH](https://www.amazon.de/dp/B098TB31S7?tag=amazonpar049d-21) \* | [LiPo 1S 4000 mAh 606090, JST-PH](https://www.amazon.fr/dp/B098TB31S7?tag=amazonpar0184-21) \* |
+| **LiPo 3.7 V 5000 mAh, 706090 (≈ 7 × 60 × 90 mm), JST-PH 2.0, with protection board**<br><sub>Max. 61.7 × 92.1 × 8.0 mm; leads at a corner of the short end, ≥ 50 mm from cell to plug end. Check polarity.</sub><br><sub>**Alternative:** a 606090 (≈ 6 × 60 × 90 mm) fits the same pocket. It usually has 3000–4000 mAh, so the frame runs less long per charge.</sub><br><sub>**Not tested:** the cell I used (PL706090, 5000 mAh, 60.5 × 91 × 6.5 mm, 62 mm leads) is sold out everywhere. Check size and leads before you buy.</sub> | 1 | [search 706090](https://www.amazon.com/s?k=706090+lipo+battery+JST+PH&tag=amazonpart0bf-20)<br><sub>Alternative:</sub> [Winfox 4000 mAh 606090, JST-PH](https://www.amazon.com/dp/B0GDQ7MFW5?tag=amazonpart0bf-20) \* | [search 706090](https://www.amazon.de/s?k=LiPo+Akku+706090+JST+PH&tag=amazonpar049d-21)<br><sub>Alternative:</sub> [LiPo 1S 4000 mAh 606090, JST-PH](https://www.amazon.de/dp/B098TB31S7?tag=amazonpar049d-21) \* | [search 706090](https://www.amazon.fr/s?k=batterie+LiPo+706090+JST+PH&tag=amazonpar0184-21)<br><sub>Alternative:</sub> [LiPo 1S 4000 mAh 606090, JST-PH](https://www.amazon.fr/dp/B098TB31S7?tag=amazonpar0184-21) \* |
 | **Wooden picture frame 30 × 40 cm (12 × 16 in works too), with glass**<br><sub>At least 20 mm from the back of the glass to the back edge of the frame; back board held by clips</sub><br><sub>[boesner Quadro Eiche (tested)](https://www.boesner.com/quadro-eiche-glaswechselrahmen-25048) · Tested: boesner Quadro Eiche Glaswechselrahmen, 20 × 30 mm profile.</sub> | 1 | [12 × 16 in shadow box, 1¾″ deep](https://www.amazon.com/dp/B0FH7LY7XT?tag=amazonpart0bf-20) \* | [BD ART oak box frame 30 × 40, 3 cm](https://www.amazon.de/dp/B0CLH8W45G?tag=amazonpar049d-21) \* | [PHOTOLINI box frame 30 × 40, 3 cm](https://www.amazon.fr/dp/B08HJD9FXK?tag=amazonpar0184-21) \* |
 | **Passepartout / mat, 30 × 40 cm (or 12 × 16 in), 1.4 mm, centred window**<br><sub>Window 196–202.8 × 264–270.4 mm, e.g. 200 × 267 mm</sub> | 1 | [Uncut 12 × 16 mat boards (cut the window yourself)](https://www.amazon.com/dp/B087Z4G2CP?tag=amazonpart0bf-20) \* | [AlphaUVplus mat, window made to order](https://www.amazon.de/dp/B08WCQD63W?tag=amazonpar049d-21) \* | [CEANOTHE mat 30 × 40, 20 × 27 cm window](https://www.amazon.fr/dp/B004ZJ46PC?tag=amazonpar0184-21) \* |
 | **Double-sided foam tape, 1 mm**<br><sub>1 mm thick, about 19 mm wide</sub> | ≈ 40 × 135 mm | [search](https://www.amazon.com/s?k=double+sided+foam+tape+1mm+19mm&tag=amazonpart0bf-20) | [search](https://www.amazon.de/s?k=doppelseitiges+Schaumklebeband+1mm+19mm&tag=amazonpar049d-21) | [search](https://www.amazon.fr/s?k=ruban+adh%C3%A9sif+double+face+mousse+1mm+19mm&tag=amazonpar0184-21) |

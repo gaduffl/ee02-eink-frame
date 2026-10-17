@@ -2,8 +2,9 @@
 
 ## Docs — 2026-10-17
 
-- Photos of the finished frame.
+- Photos of the finished frame, showing a photo and a dashboard.
 - Back board: corner notch 133 × 217 mm, matching the real build; the back board's own hangers can be used instead of the printed ones.
+- Battery: the tested cell is a 706090 (5000 mAh); a 606090 fits as an alternative.
 
 ## Docs — 2026-10-16
 
