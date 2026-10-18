@@ -1,5 +1,10 @@
 # Changelog
 
+## Docs — 2026-10-18
+
+- Cost estimate for the whole build, and a "no soldering" note at the top of the README.
+- Social preview image in `docs/images/photos/social-preview.jpg`.
+
 ## Docs — 2026-10-17
 
 - Photos of the finished frame, showing a photo and a dashboard.

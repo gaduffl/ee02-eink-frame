@@ -5,6 +5,8 @@ A battery-powered 13.3″ colour e-paper picture frame built into an off-the-she
 ![The finished frame on the wall, showing a photo on the 13.3″ colour e-paper panel](docs/images/photos/picture.jpg)
 
 - **No changes to the frame.** The case is taped to the passepartout's side margin, and the panel is taped behind the passepartout window.
+- **No soldering.** The display flex, the antenna and the battery all plug in. You need a 3D printer (or a print service) and a knife for the notch in the back board.
+- **About € 260–285 all in** in the EU, or US$ 215–240 plus shipping. Details under [Cost](#cost).
 - **The flex sets the position.** The display flex folds 180° around the panel's lower edge and plugs straight into the EE02, which sits behind the panel's corner.
 - **Tool-free battery swap.** Slide the battery lid off, unplug, swap, slide it back.
 - **Keys and power switch reachable** from the back through a 45 mm opening.
@@ -22,6 +24,10 @@ A battery-powered 13.3″ colour e-paper picture frame built into an off-the-she
 | ![Render of the case behind the display's lower corner](docs/images/case.png) | ![All parts on one P1S plate](docs/images/plate.png) |
 
 ## Parts
+
+### Cost
+
+About € 260–285 in the EU, or US$ 215–240 plus shipping (prices from October 2026). Board and panel are most of it: US$ 164 at Seeed Studio, or € 209 at OpenELAB. Frame, passepartout, battery, tape, screws and filament add about 50–75 in either currency. Prices and stock change, so check the shops.
 
 ### Electronics
 
