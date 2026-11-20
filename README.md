@@ -36,7 +36,7 @@ The EE02 board and the 13.3″ Spectra 6 panel (T133A01, 1200 × 1600) it was ma
 | Shop | What to order |
 |---|---|
 | Seeed Studio, ships worldwide | [XIAO ePaper DIY Kit EE02](https://www.seeedstudio.com/XIAO-ePaper-DIY-Kit-EE02-for-13-3-Spectratm-6-E-Ink.html?sensecap_affiliate=51k9ycE&referring_service=link)\*: **one kit** with board and panel. Select both on the page. |
-| OpenELAB, EU | **Two items:** the [EE02 board](https://openelab.de/products/seeed-studio-xiao-epaper-board?variant=53040086614353) and the [13.3″ Spectra 6 panel](https://openelab.de/products/seeed-studio-13-3-zoll-epaper?variant=53022818992465) |
+| OpenELAB, EU | **Two items:** the [EE02 board](https://openelab.de/products/seeed-studio-xiao-epaper-board?variant=53040086614353&sca_ref=12566440.HINKkfcYEVA2F)\* and the [13.3″ Spectra 6 panel](https://openelab.de/products/seeed-studio-13-3-zoll-epaper?variant=53022818992465&sca_ref=12566440.HINKkfcYEVA2F)\*. If the panel is sold out there, order the kit from Seeed. |
 
 ### Everything else
 
@@ -145,4 +145,4 @@ This is Rev B. The [changelog](CHANGELOG.md) lists what changed after the first 
 
 ---
 
-<sub>\* **Affiliate links:** the Seeed Studio and Amazon links in the parts list are affiliate links; the price is the same for you. As an Amazon Associate I earn from qualifying purchases. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.</sub>
+<sub>\* **Affiliate links:** the Seeed Studio, OpenELAB and Amazon links in the parts list are affiliate links; the price is the same for you. As an Amazon Associate I earn from qualifying purchases. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.</sub>

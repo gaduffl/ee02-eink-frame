@@ -1,5 +1,10 @@
 # Changelog
 
+## Docs — 2026-11-20
+
+- OpenELAB links are affiliate links now, marked with \* like the others.
+- Note to order the Seeed kit when OpenELAB is out of panels.
+
 ## Docs — 2026-10-18
 
 - Cost estimate for the whole build, and a "no soldering" note at the top of the README.
